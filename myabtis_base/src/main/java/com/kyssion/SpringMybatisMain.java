@@ -20,7 +20,6 @@ public class SpringMybatisMain {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring.xml");
     }
 }
-@MappedJdbcTypes()
 class Handle extends BaseTypeHandler<String>{
 
     @Override
