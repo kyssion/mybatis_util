@@ -1,4 +1,4 @@
-package kyssion.bean;
+package com.kyssion.bean;
 
 public class TestBean {
     private int id;

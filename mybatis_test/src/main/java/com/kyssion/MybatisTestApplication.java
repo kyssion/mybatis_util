@@ -1,6 +1,7 @@
-package kyssion;
+package com.kyssion;
 
-import kyssion.service.TestService;
+import com.kyssion.service.TestService;
+import org.apache.ibatis.reflection.wrapper.ObjectWrapperFactory;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -8,7 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("classpath:com.kyssion.mapper")
+@MapperScan("com.kyssion.mapper")
 public class MybatisTestApplication implements CommandLineRunner {
     @Autowired
     TestService testService;
@@ -18,6 +19,7 @@ public class MybatisTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        testService.test();
+//        System.out.println(testService.test().getName());
+        System.out.println(testService.test2().getName());
     }
 }
