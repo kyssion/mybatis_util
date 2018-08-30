@@ -18,6 +18,6 @@ public class MybatisTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(testService.test().getName());
+        testService.test();
     }
 }
