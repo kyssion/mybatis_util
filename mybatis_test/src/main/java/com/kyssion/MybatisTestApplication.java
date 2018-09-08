@@ -22,9 +22,9 @@ public class MybatisTestApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        SqlSessionFactoryBuilder;
-        SqlSessionFactory  ;
-        SqlSession
+        SqlSessionFactoryBuilder builder;
+        SqlSessionFactory  factory;
+        SqlSession sqlSession;
         System.out.println(testService.test2().getName());
     }
 }
