@@ -10,6 +10,8 @@ import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedJdbcTypes;
 import org.apache.ibatis.type.TypeHandler;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -35,5 +37,12 @@ public class SpringMybatisMain implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         mapper.selectOne("sdfsdf");
+    }
+
+
+    public void Test1() throws Exception {
+        SqlSessionFactory factoryBean = new SqlSessionFactoryBean().getObject();
+        SqlSessionTemplate template =new SqlSessionTemplate(factoryBean);
+
     }
 }

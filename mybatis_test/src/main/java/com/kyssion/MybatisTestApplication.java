@@ -25,6 +25,6 @@ public class MybatisTestApplication implements CommandLineRunner {
         SqlSessionFactoryBuilder builder;
         SqlSessionFactory  factory;
         SqlSession sqlSession;
-        System.out.println(testService.test2().getName());
+       System.out.println(testService.test2().getName());
     }
 }
