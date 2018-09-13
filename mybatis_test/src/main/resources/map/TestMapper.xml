@@ -6,7 +6,7 @@
     <resultMap type="com.kyssion.module.TestModule" id="testModule">
         <result property="id" column="id"/>
     </resultMap>
-    <select id="selectOne" resultMap="testModule">
+    <select id="selectOne" resultMap= "testModule">
     SELECT * FROM goods where id = #{id}
   </select>
 </mapper>
