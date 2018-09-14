@@ -1,9 +1,12 @@
 package com.kyssion.module;
 
+import org.apache.ibatis.annotations.Mapper;
+
 public class TestModule {
     private String name;
     private String password;
 
+    @Mapper
     public String getName() {
         return name;
     }
