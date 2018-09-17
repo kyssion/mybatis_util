@@ -7,6 +7,6 @@
         <result property="id" column="id"/>
     </resultMap>
     <select id="selectOne" resultMap= "testModule">
-    SELECT * FROM goods where id = #{id}
+    SELECT * FROM goods
   </select>
 </mapper>
