@@ -1,7 +1,6 @@
 package com.kyssion;
 
 import com.kyssion.mapper.TestMapper;
-import com.kyssion.service.HHH;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -26,8 +25,6 @@ public class SpringMybatisMain implements CommandLineRunner {
     @Autowired
     TestMapper mapper;
 
-    @Autowired
-    HHH hhh;
     public static void main(String[] args) {
         SpringApplication.run(SpringMybatisMain.class);
     }
