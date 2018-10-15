@@ -25,6 +25,7 @@ public class SpringMybatisMain implements CommandLineRunner {
     @Autowired
     TestMapper mapper;
 
+
     public static void main(String[] args) {
         SpringApplication.run(SpringMybatisMain.class);
     }
