@@ -12,7 +12,8 @@ public class TestService {
 
     public void test(){
         TestBean testBean  = new TestBean();
-        testBean.setId(123);
+        testBean.setPassword("14159265jkl");
+        testBean.setName("tom");
         testMapper.getMapperById(new TestBean());
     }
 

@@ -1,18 +1,8 @@
 package com.kyssion.bean;
 
 public class TestBean {
-    private int id;
     private String name;
-    private int money;
-    private String item;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    private String password;
 
     public String getName() {
         return name;
@@ -22,19 +12,11 @@ public class TestBean {
         this.name = name;
     }
 
-    public int getMoney() {
-        return money;
+    public String getPassword() {
+        return password;
     }
 
-    public void setMoney(int money) {
-        this.money = money;
-    }
-
-    public String getItem() {
-        return item;
-    }
-
-    public void setItem(String item) {
-        this.item = item;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

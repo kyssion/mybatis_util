@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Mapper
 public interface TestMapper {
-    @Select("select * from mybatis_test where id = #{id}")
+    @Select("select * from new_test where name = #{id}")
     TestBean getMapperById(TestBean bean);
 
     @Select("select * from xm_test_item")

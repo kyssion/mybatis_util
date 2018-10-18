@@ -7,6 +7,6 @@
         <result property="id" column="id"/>
     </resultMap>
     <select id="selectOne" resultMap= "testModule">
-    SELECT * FROM goods
+    SELECT * FROM new_test;
   </select>
 </mapper>
