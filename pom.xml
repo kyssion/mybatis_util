@@ -11,7 +11,6 @@
         <module>mybatis_language_driver</module>
         <module>mybatis_test</module>
         <module>mybatis_starter</module>
-        <module>myabtis_base</module>
     </modules>
     <packaging>pom</packaging>
 

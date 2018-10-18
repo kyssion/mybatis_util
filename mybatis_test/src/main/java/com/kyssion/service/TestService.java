@@ -18,6 +18,6 @@ public class TestService {
     }
 
     public void test2(){
-        testMapper.getMapperById2();
+        testMapper.getMapperById2("tom","14159265jkl");
     }
 }
